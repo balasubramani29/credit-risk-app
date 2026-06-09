@@ -26,7 +26,7 @@ from sklearn.metrics import (
 
 from streamlit_option_menu import option_menu
 from helpers import load_css
-from utils.data_loader import load_data, preprocess
+from data_loader import load_data, preprocess
 from ml.predict import load_model
 from custom_pages.dashboard import show_dashboard
 from custom_pages.prediction import show_prediction
