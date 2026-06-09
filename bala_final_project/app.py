@@ -10,7 +10,7 @@ import plotly.graph_objects as go
 from datetime import datetime
 
 from sklearn.model_selection import train_test_split, cross_val_score
-from sklearn.preprocessing import LabelEncoder
+from  sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
@@ -25,8 +25,8 @@ from sklearn.metrics import (
 )
 
 from streamlit_option_menu import option_menu
-from helpers import load_css
-from data_loader import load_data, preprocess
+from utils.helpers import load_css
+from utils.data_loader import load_data, preprocess
 from ml.predict import load_model
 from custom_pages.dashboard import show_dashboard
 from custom_pages.prediction import show_prediction
